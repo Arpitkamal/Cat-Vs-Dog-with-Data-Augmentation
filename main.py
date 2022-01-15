@@ -14,8 +14,6 @@ import plotly.graph_objs as go
 import pandas as pd
 
 
-
-
 st.header("Cat Vs Dog ")
 
 selectedway = st.selectbox("Cat Vs Dog",("Without Data Augumentation","With Data Augumenation"))
