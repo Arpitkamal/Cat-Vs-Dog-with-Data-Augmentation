@@ -36,16 +36,16 @@ In this Application user can Train the Convolutional Neural Network with or with
 
 By Selecting following Hyerparameter:
 
-`Activation function` for the convolution Neural Network.\n
-`Padding` for the Convolutional Neural Network.\n
-`Filter size` for the First Convolution Layer.\n
-`Filter size` for the Second Convolution Layer.\n
-`Filter size` for the Third Convolution Layer.\n
-`Filter size` for the Fourth Convolution Layer.\n
-`Activation function` for the Dense Layer.\n
-`Number of Epochs` you want to Run the Model.\n
-`loss Function` for model Compiler.\n
-`optimization Function` for the model Compiler.\n
+`Activation function` for the convolution Neural Network.<br />
+`Padding` for the Convolutional Neural Network.<br />
+`Filter size` for the First Convolution Layer.<br />
+`Filter size` for the Second Convolution Layer.<br />
+`Filter size` for the Third Convolution Layer.<br />
+`Filter size` for the Fourth Convolution Layer.<br />
+`Activation function` for the Dense Layer.<br />
+`Number of Epochs` you want to Run the Model.<br />
+`loss Function` for model Compiler.<br />
+`optimization Function` for the model Compiler.<br />
 
 ![Output](screenshots/2.JPG)
 ![Output](screenshots/3.JPG)
@@ -54,12 +54,12 @@ By Selecting following Hyerparameter:
 
 By selecting following Parameters:
 
-`Rotation range` is a value in degrees (0–180), a range within which to randomly rotate pictures.\n
-`width shift range` and `height shift range` are ranges (as a fraction of total width or height) within which to randomly translate pictures vertically or horizontally.\n
-`Shear range` is for randomly applying shearing transformations.\n
-`Zoom range` is for randomly zooming inside pictures.\n
-`Horizontel Flip` is for randomly flipping half of the images horizontally. This is relevant when there are no assumptions of horizontal assymmetry (e.g. real-world pictures).\n
-`File mode` is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.\n
+`Rotation range` is a value in degrees (0–180), a range within which to randomly rotate pictures.<br />
+`width shift range` and `height shift range` are ranges (as a fraction of total width or height) within which to randomly translate pictures vertically or horizontally.<br />
+`Shear range` is for randomly applying shearing transformations.<br />
+`Zoom range` is for randomly zooming inside pictures.<br />
+`Horizontel Flip` is for randomly flipping half of the images horizontally. This is relevant when there are no assumptions of horizontal assymmetry (e.g. real-world pictures).<br />
+`File mode` is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.<br />
 
 Once user selected all the above parameters. 
 User can click the `Train Model` button to train the model.
