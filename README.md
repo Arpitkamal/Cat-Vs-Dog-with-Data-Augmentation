@@ -26,8 +26,61 @@ To run the application go the downloaded Directory and run this command
 streamlit run main.py
 ```
 
+# Stremlit Application
+
+In this Application user can Train the Convolutional Neural Network with or without Data Augmentation.
+
+![Output](screenshots/1.JPG)
+
+### User can Build the Model by Selecting the Hyperparameter
+
+By Selecting following Hyerparameter:
+
+`Activation function` for the convolution Neural Network.
+`Padding` for the Convolutional Neural Network.
+`Filter size` for the First Convolution Layer.
+`Filter size` for the Second Convolution Layer.
+`Filter size` for the Third Convolution Layer.
+`Filter size` for the Fourth Convolution Layer.
+`Activation function` for the Dense Layer.
+`Number of Epochs` you want to Run the Model.
+`loss Function` for model Compiler.
+`optimization Function` for the model Compiler.
+
+![Output](screenshots/2.JPG)
+![Output](screenshots/3.JPG)
+
+### User can select Different Parameters for Data Augmentaion 
+
+By selecting following Parameters:
+
+`Rotation range` is a value in degrees (0–180), a range within which to randomly rotate pictures.
+`width shift range` and `height shift range` are ranges (as a fraction of total width or height) within which to randomly translate pictures vertically or horizontally.
+`Shear range` is for randomly applying shearing transformations.
+`Zoom range` is for randomly zooming inside pictures.
+`Horizontel Flip` is for randomly flipping half of the images horizontally. This is relevant when there are no assumptions of horizontal assymmetry (e.g. real-world pictures).
+`File mode` is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.
+
+Once user selected all the above parameters. 
+User can click the `Train Model` button to train the model.
+
+![Output](screenshots/4.JPG)
+
+After clicking Button application show the Model Summary and start training the model.
+
+![Output](screenshots/5.JPG)
+![Output](screenshots/6.JPG)
+
+In the end Application will Display two plot:  
+
+1. Training and Validation Accuracy
+2. Training and Validation Loss
+
+![Output](screenshots/7.JPG)
+
+
 # Other option
 
-if you don't want to run Streamlit application just clone the repository and run `testing.ipynb` file to see the work of Data augmentation. 
+If you don't want to run Streamlit application just clone the repository and run `testing.ipynb` file to see the work of Data augmentation. 
 
 

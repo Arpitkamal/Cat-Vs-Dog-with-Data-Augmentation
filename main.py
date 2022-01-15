@@ -58,7 +58,7 @@ if selectedway == "Without Data Augumentation":
 
         callbacks = myCallback()
 
-        st.subheader("**Buid Model**")
+        st.subheader("**Build Model**")
 
         act_fun = st.selectbox("Select the activation function for Convolution Neural networks:",('relu','sigmoid', 'tanh'),index=0)
 
@@ -177,6 +177,8 @@ if selectedway == "Without Data Augumentation":
 
             epochs = list(range(len(acc)))
 
+            st.subheader("**Training and validation Accuracy**")
+
             # Ploting acucuracy of the model on training and validation data
             fig1 = go.Figure()
             fig1.add_trace(go.Scatter(x=epochs, y=acc,
@@ -187,11 +189,13 @@ if selectedway == "Without Data Augumentation":
                                 mode='lines+markers',
                                 name='Validation Accuracy'))
 
-            fig1.update_layout(title='Training and validation Accuracy',
+            fig1.update_layout(
                         xaxis_title='Epochs',
                         yaxis_title='Accuracy')
 
             st.plotly_chart(fig1)
+
+            st.subheader("**Training and validation Loss**")
 
             # Ploting loss of the model on training and validation data
             fig2 = go.Figure()
@@ -203,7 +207,7 @@ if selectedway == "Without Data Augumentation":
                                 mode='lines+markers',
                                 name='Validation Loss'))
 
-            fig2.update_layout(title='Training and validation Loss',
+            fig2.update_layout(#title='Training and validation Loss',
                         xaxis_title='Epochs',
                         yaxis_title='Loss')
 
