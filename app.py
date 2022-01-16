@@ -34,7 +34,7 @@ def main():
                 predictions = predict(image)
                 time.sleep(1)
                 st.success('Classified')
-                st.balloons
+                st.balloons()
                 if predictions > 0.5:
                     st.write("Dog")
                     st.pyplot(fig)
