@@ -10,7 +10,7 @@ Data Augmentation is helpful if you have small data.
 
 # Streamlit Online Application 
 
-Where you can upload the image to check whether it Cat or Dog using pre-trained model.
+Where you can `upload the image` to check whether it Cat or Dog using pre-trained model.
 
 [Streamlit Appilaction](https://share.streamlit.io/arpitkamal/cat-vs-dog-with-data-augmentation/main/app.py)
 
