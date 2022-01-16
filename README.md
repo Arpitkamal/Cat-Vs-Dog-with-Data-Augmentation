@@ -32,6 +32,11 @@ To run the application go the downloaded Directory and run this command
 streamlit run main.py
 ```
 
+To run the application where you can test the `pre-trained model` by uploading a image.
+
+```bash
+streamlit run app.py
+```
 
 # Stremlit Application
 
