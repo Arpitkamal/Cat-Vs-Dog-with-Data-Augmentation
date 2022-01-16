@@ -11,6 +11,9 @@ from io import StringIO
 import plotly.express as px 
 import plotly.graph_objs as go
 import pandas as pd
+import numpy as np
+from tensorflow.keras.preprocessing import image
+
 
 
 st.header("Cat Vs Dog ")
@@ -214,7 +217,7 @@ if selectedway == "Without Data Augumentation":
             st.plotly_chart(fig2)
     # calling without Augumentaion function
 else:
-    st.write("Cat Vs Dog With Data Augumentation")
+    st.subheader("Cat Vs Dog With Data Augumentation")
 
     def with_aug():
         train_cats_dir, train_dogs_dir, validation_cats_dir, validation_dogs_dir, train_dir, validation_dir = get_data()
@@ -276,6 +279,8 @@ else:
         hor_flip = st.selectbox("Select the Horizontel Flip :",(True,False),index=0)
         fill_mode = st.selectbox("Select the File mode : ",("constant","nearest","reflect","wrap"),index=1)
 
+        Augmentation_test = st.selectbox("Do you want to have same Data Augmentation Parameter on Testing Data",('Yes','No'),index=0)
+
         # for printing model summary on the application
         old_stdout = sys.stdout
         sys.stdout = mystdout = StringIO()
@@ -315,9 +320,6 @@ else:
                 model.compile(loss=loss_func,optimizer=Adadelta(learning_rate=0.001),metrics=['accuracy'])
 
             
-            
-
-            
             # This code has changed. Now instead of the ImageGenerator just rescaling
             # the image, we also rotate and do other operations
             # Updated to do image augmentation
@@ -330,17 +332,21 @@ else:
                 zoom_range=zoom_range,
                 horizontal_flip=hor_flip,
                 fill_mode=fill_mode)
-            
-            test_datagen = ImageDataGenerator(
-                rescale=1./255,
-                rotation_range=rot_range,
-                width_shift_range=width_range,
-                height_shift_range=height_range,
-                shear_range=shear_range,
-                zoom_range=zoom_range,
-                horizontal_flip=hor_flip,
-                fill_mode=fill_mode
-                )
+
+
+            if Augmentation_test == 'Yes':
+                test_datagen = ImageDataGenerator(
+                    rescale=1./255,
+                    rotation_range=rot_range,
+                    width_shift_range=width_range,
+                    height_shift_range=height_range,
+                    shear_range=shear_range,
+                    zoom_range=zoom_range,
+                    horizontal_flip=hor_flip,
+                    fill_mode=fill_mode
+                    )
+            else:
+                test_datagen = ImageDataGenerator(rescale=1./255)
 
             # Flow training images in batches of 20 using train_datagen generator
             train_generator = train_datagen.flow_from_directory(
@@ -410,7 +416,6 @@ else:
                         yaxis_title='Loss')
 
             st.plotly_chart(fig2)
-
 
 if selectedway == "Without Data Augumentation":
     without_aug()

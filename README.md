@@ -14,7 +14,7 @@ The following bash code will install all the necessary dependencies.
 
 ```bash
 git clone https://github.com/Arpitkamal/Cat-Vs-Dog-with-Data-Augmentation.git
-cd cat_vs_dog
+cd Cat-Vs-Dog-with-Data-Augmentation
 pip install -r requirements.txt
 ```
 
