@@ -8,6 +8,12 @@ Data Augmentation act as a regularizer and help to reduce overfitting when train
 
 Data Augmentation is helpful if you have small data.
 
+# Streamlit Online Application 
+
+Where you can upload the image to check whether it Cat or Dog using pre-trained model.
+
+[Streamlit Appilaction](https://share.streamlit.io/arpitkamal/cat-vs-dog-with-data-augmentation/main/app.py)
+
 # How to Install Dependencies to Run the application.
 
 The following bash code will install all the necessary dependencies.
@@ -25,12 +31,6 @@ To run the application go the downloaded Directory and run this command
 ```bash
 streamlit run main.py
 ```
-
-# Streamlit Online Application 
-
-Where you can upload the image to check whether it Cat or Dog using pre-trained model.
-
-[Streamlit Appilaction](https://share.streamlit.io/arpitkamal/cat-vs-dog-with-data-augmentation/main/app.py)
 
 
 # Stremlit Application
