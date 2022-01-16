@@ -16,7 +16,7 @@ with open("app.css") as f:
 
 st.title("Cat Vs Dog With Data Augmentation")
 
-st.write("**You can upload the image to check wheather It is Cat or Dog using Pre-trained model**")
+st.write("**You can upload the image to check whether It is Cat or Dog using Pre-trained model using Data Augmentation**")
 
 def main():
     file_uploaded = st.file_uploader("Choose File", type=["png","jpg","jpeg"])
