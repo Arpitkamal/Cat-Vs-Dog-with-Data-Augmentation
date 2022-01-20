@@ -14,7 +14,7 @@ fig = plt.figure()
 with open("app.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.title("Cat Vs Dog With Data Augmentation")
+st.title("Cat Vs Dog")
 
 st.write("You can upload the image to check whether It is Cat or Dog using Pre-trained model")
 
@@ -43,7 +43,7 @@ def main():
                 else:
                     st.write("Cat")
                     
-                    
+
 def predict(image):
     st.write(model_selected)
     if model_selected == "Model With Data Augmentation":
