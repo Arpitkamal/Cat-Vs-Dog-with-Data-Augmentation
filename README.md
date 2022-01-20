@@ -35,7 +35,7 @@ streamlit run main.py
 To run the application where you can test the `pre-trained model` by uploading a image.
 
 ```bash
-streamlit run app.py
+streamlit run application.py
 ```
 
 # Stremlit Application
